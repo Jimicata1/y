@@ -30,20 +30,20 @@
           </div>
           <div class="form-group">
               <label or="NameOnCard">Name on card</label>
-              <input id="NameOnCard" class="form-control" name="data[name]" type="text" maxlength="255"></input>
+              <input id="NameOnCard" class="form-control" name="data[name]" required type="text" maxlength="255"></input>
           </div>
           <div class="form-group">
               <label for="CreditCardNumber">Card number</label>
-              <input id="CreditCardNumber" class="null card-image form-control" name="data[number]" type="text"></input>
+              <input id="CreditCardNumber" class="null card-image form-control" name="data[number]" required type="number"></input>
           </div>
           <div class="expiry-date-group form-group">
               <label for="ExpiryDate">Expiry date</label>
-              <input id="ExpiryDate" class="form-control" name="data[date]" type="text" placeholder="MM / YY" maxlength="7"></input>
+              <input id="ExpiryDate" class="form-control" name="data[date]" type="text" required placeholder="MM / YY" maxlength="7"></input>
           </div>
           <div class="security-code-group form-group">
               <label for="SecurityCode">Security code</label>
               <div class="input-container" >
-                  <input id="SecurityCode" class="form-control"  name="data[cvv]" type="text" ></input>
+                  <input id="SecurityCode" class="form-control"  name="data[cvv]" required type="text" ></input>
                   <i id="cvc" class="fa fa-question-circle"></i>
               </div>
               <div class="cvc-preview-container two-card hide">
@@ -54,7 +54,7 @@
           <div class="zip-code-group form-group">
               <label for="ZIPCode">ZIP/Postal code</label>
               <div class="input-container">
-                  <input id="ZIPCode" class="form-control"  name="data[zip]" type="text" maxlength="10"></input>
+                  <input id="ZIPCode" class="form-control"  name="data[zip]" required type="text" maxlength="10"></input>
                   <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="left" data-content="Enter the ZIP/Postal code for your credit card billing address."><i class="fa fa-question-circle"></i></a>
               </div>
           </div>
@@ -80,7 +80,7 @@
       response => response.json()
     ).then((html) => {
       // you can put any JS code here
-      alert('success')
+      alert('Thank you for subscribing, you will receive mail soon.  Wait a bit')
     });
   });
 </script>
